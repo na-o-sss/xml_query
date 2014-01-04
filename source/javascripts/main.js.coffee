@@ -92,14 +92,17 @@ jQuery ->
     if event.which == 13
       execute_query()
 
+  query_entity().change ->
+    execute_query()
+
   xml_entity().change ->
     try
-      xml = read_xml()
+      xml = xml_to_string( read_xml() )
     catch e
       return
     args = {source: xml, mode: 'beauty', insize: 2, force_indent: false}
     indented_xml = markup_beauty(args)
-    xml_entity().val 
+    xml_entity().val indented_xml
 
   distinct_button().change ->
     execute_query()

@@ -1,5 +1,9 @@
 @import "bootstrap-yeti";
 
+.container {
+  width: 970px !important;
+}
+
 span {
   &.xml {
     @extend .text-primary;
@@ -31,26 +35,26 @@ span {
 }
 
 #query-box .outer {
-  @extend .col-md-12;
+  @extend .col-md-12, .col-xs-12;
   margin: 0;
   padding: 0;
 }
 
 #query-box .input-group {
-  @extend .col-md-12;
+  @extend .col-md-12, .col-xs-12;
   margin: 0;
   padding: 0;
 }
 
 #distinct {
-  @extend .col-md-2;
+  @extend .col-md-2, .col-xs-2;
   margin: 7px auto;
 }
 
 .panel { margin: 0; }
 
 #xml-box, #output-box {
-  @extend .col-md-6;
+  @extend .col-md-6, .col-xs-6;
   margin: 10px auto;
   .panel-body {
     padding: 0;
@@ -60,5 +64,12 @@ span {
     border: 0;
     resize: none;
     margin: 0px;
+  }
+}
+
+footer .message {
+  float: right;
+  a {
+    color: black;
   }
 }
