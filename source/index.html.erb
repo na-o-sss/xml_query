@@ -1,0 +1,59 @@
+---
+title: XML Query
+---
+
+<div class="container">
+  <h1 id="title">jQuery(
+    <span class="xml">XML</span>
+    ).find(
+    <span class="query">QUERY</span>
+    ) = 
+    <span class="result">RESULT</span>
+  </h1>
+
+  <div id="main">
+    <div class="row">
+
+      <div id="xml-box">
+        <div class="panel panel-xml">
+          <div class="panel-heading">
+              XML
+              <span class="glyphicon glyphicon-warning-sign text-danger hidden"></span>
+          </div>
+          <div class="panel-body">
+            <textarea class="form-control" rows="20"><%= data.default.xml %></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div id="output-box">
+        <div class="panel panel-result">
+          <div class="panel-heading">RESULT</div>
+          <div class="panel-body">
+            <textarea class="form-control" rows="20"></textarea>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+    <div class="row" id="query-box">
+      <div class="outer">
+        <div class="input-group">
+          <div class="input-group-addon">
+            QUERY
+            <div class="glyphicon glyphicon-warning-sign text-danger hidden"></div>
+          </div>
+          <input type="text" class="form-control" value="<%= data.default.query %>">
+        </div>
+<!--         <div class="checkbox" id="distinct">
+          <label>
+            <input type="checkbox" value="">
+            distinct  
+          </label>
+        </div> -->
+      </div>
+    </div>
+
+  </div>
+</div>

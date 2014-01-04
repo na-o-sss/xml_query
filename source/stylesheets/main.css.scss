@@ -1,0 +1,64 @@
+@import "bootstrap-yeti";
+
+span {
+  &.xml {
+    @extend .text-primary;
+  }
+
+  &.query {
+    @extend .text-success;
+  }
+
+  &.result {
+    @extend .text-info;
+  }
+}
+
+.panel-xml { @extend .panel-primary; }
+.panel-result { @extend .panel-info; }
+
+.hidden {
+  visibility: hidden;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+#query-box {
+  @extend .has-success;
+  margin: 10px auto;
+}
+
+#query-box .outer {
+  @extend .col-md-12;
+  margin: 0;
+  padding: 0;
+}
+
+#query-box .input-group {
+  @extend .col-md-12;
+  margin: 0;
+  padding: 0;
+}
+
+#distinct {
+  @extend .col-md-2;
+  margin: 7px auto;
+}
+
+.panel { margin: 0; }
+
+#xml-box, #output-box {
+  @extend .col-md-6;
+  margin: 10px auto;
+  .panel-body {
+    padding: 0;
+  }
+  textarea {
+    border-radius: 0;
+    border: 0;
+    resize: none;
+    margin: 0px;
+  }
+}
